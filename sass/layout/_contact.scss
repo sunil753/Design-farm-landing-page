@@ -1,0 +1,169 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contact-wrapper {
+        width: 60%;
+        height: 75rem;
+        display: flex;
+        background-color: #fff;
+        box-shadow: 0 3rem 7rem rgba($color: #000000, $alpha: 0.5);
+
+        @media (max-width:1500px) {
+            width: 80%;
+            height: 65rem;
+        }
+
+        @media(max-width:1300px) {
+            width: 90%;
+            height: 55rem;
+        }
+
+        .contact-left {
+            width: 35%;
+            background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(/images/contact-bg.jpg) center no-repeat;
+            background-size: cover;
+
+            @media (max-width:1000px) {
+                width: 0;
+            }
+        }
+
+        .contact-right {
+            width: 65%;
+            background-color: #eee;
+            padding: 3rem 10rem 10rem 10rem;
+
+            @media (max-width:1000px) {
+                width: 100%;
+            }
+
+            .contact-heading {
+                font-family: "Baloo Da 2", serif;
+                font-size: 6rem;
+                font-weight: 300;
+                color: #272727;
+                margin-bottom: 5rem;
+                text-align: center;
+
+                @media(max-width:1300px) {
+                    margin-bottom: 2rem;
+                }
+
+            }
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                .submit-btn {
+                    width: 45rem;
+                    height: 5rem;
+                    background-color: #c29525;
+                    color: #fff;
+                    border: none;
+                    margin-top: 2rem;
+                    font-family: 'Muli', serif;
+                    font-size: 2rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    letter-spacing: 2rem;
+                    cursor: pointer;
+                    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+                    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+
+                    @media (max-width:1000px) {
+                        width: 55rem;
+                    }
+
+                    @media (max-width:700px) {
+                        width: 35rem;
+                    }
+                }
+
+                .input-group {
+                    position: relative;
+
+                    input {
+                        height: 4rem;
+                    }
+
+                    textarea {
+                        min-height: 7rem;
+                        max-width: 45rem;
+
+                        @media (max-width:1000px) {
+                            max-width: 55rem;
+                        }
+
+                        @media (max-width:700px) {
+                            max-width: 35rem;
+                        }
+                    }
+
+                    label {
+                        position: absolute;
+                        left: 0;
+                        font-family: 'Baloo Da 2', sans-serif;
+                        font-size: 1.8rem;
+                        color: #4b4b4b;
+                        text-transform: uppercase;
+                        pointer-events: none;
+                        transition: all 0.3s
+                    }
+
+                    .input-label {
+                        bottom: 3rem;
+                    }
+
+                    .message {
+                        bottom: 6rem;
+                    }
+
+                    .field {
+                        width: 45rem;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 0.2rem dashed #636363;
+                        margin: 3rem 0;
+                        padding: 1rem 1rem 1rem 0;
+                        font-family: 'Muli', serif;
+                        font-size: 1.6rem;
+                        color: #4b4b4b;
+
+                        @media(max-width:1300px) {
+                            margin: 2rem 0;
+                        }
+
+                        @media(max-width:1000px) {
+                            width: 55rem;
+                        }
+
+                        @media(max-width:700px) {
+                            width: 35rem;
+                        }
+                    }
+
+                    .field:focus {
+                        border-bottom-style: solid;
+
+                    }
+
+                    .field:focus~label {
+                        transform: translateY(-3rem);
+                        font-size: 1.2rem;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
